@@ -1,7 +1,10 @@
-const Trip = () => {
+import minibus from "./minibus-icon-tripList.png"
+
+const Trip = ({id, firstCity, secondCity, depTime, arrTime, price,numSeats}) => {
     return(
         <div className="trip">
-            <span>Минск-Быхов         15:10       18:10     10р.    4 места</span>
+            <img src={minibus} className="minibus-trip-icon" alt="trip-icon"/>
+            <span>{firstCity}-{secondCity}   {depTime}       {arrTime}    {price}       {numSeats}</span>
             <button>
                 Заказать
             </button>

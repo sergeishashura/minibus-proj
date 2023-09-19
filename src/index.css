@@ -37,7 +37,6 @@ h1{
 }
 
 .trips-list{
-  display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
@@ -49,12 +48,29 @@ h1{
   margin-bottom: 10px;
   min-height: 30px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   white-space: pre-wrap;
 }
 
+.minibus-trip-icon{
+  width: 35px;
+  margin-right: 70px;
+}
+
+.trip span{
+  margin-right: auto;
+  align-content: space-between;
+  font-family:"Apple SD Gothic Neo";
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+
 .trip button {
+  font-family:"Apple SD Gothic Neo";
+  font-size: 20px;
+  font-weight: bold;
   background-color: #6790b2;
   color: white;
   border: none;
@@ -85,6 +101,7 @@ h1{
   margin-left: 50px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   white-space: pre-wrap;
 }
 
@@ -97,7 +114,15 @@ select {
   font-size: 16px;
 }
 
+.arrow-right{
+  width: 50px;
+  height: auto;
+}
+
+
 .data-input-field button {
+  font-family:"Apple SD Gothic Neo";
+  font-weight: bold;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -109,5 +134,32 @@ select {
 
 .city-find-button button:hover{
   background-color: #419b35;
+}
+
+.footer {
+  font-family:"Apple SD Gothic Neo";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  color:black;
+  padding: 20px;
+}
+
+.footer .links {
+  font-family:"Apple SD Gothic Neo";
+  float: left;
+  margin-right: 20px;  /* Добавляем отступ справа, чтобы отделить от следующего блока */
+}
+
+.footer .numbers {
+  font-family:"Apple SD Gothic Neo";
+  float: left;
+  margin: 0 auto;  /* Центрируем блок по горизонтали */
+}
+
+.footer .info {
+  font-family:"Apple SD Gothic Neo";
+  float: right;
 }
 
