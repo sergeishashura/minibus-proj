@@ -49,7 +49,7 @@ function App() {
   return (
       <div className="container">
           <Header />
-          <CitySelectField />
+          <CitySelectField trips={trips} setTrips={setTrips}/>
           <TripsList trips={trips}/>
           <Footer />
       </div>
